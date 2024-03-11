@@ -1,0 +1,189 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro"
+import Card from '../components/Card.astro';
+
+
+---
+
+<Layout title="VitalClinic">
+	<Navbar />
+
+	<main>
+	<section class="image w-full h-96 bg-[#e20506] flex flex-col justify-center items-center gap-2 md:flex-row-reverse md:justify-around md:gap-0  ">
+		<div class=" bg-white rounded-full  grid content-center w-40 h-40 lg:w-80 lg:h-80">
+			<img src="/logo.webp" alt="logo Vitalclinic" class="w-32 pl-4 lg:w-72 lg:p-4">
+		</div>
+		<h1 class="text-3xl font-bold text-center md:w-[500px] lg:w-[600px] lg:text-4xl">Empresa dedicada al abastecimiento de pequeñas y grandes farmacias.</h1>
+	</section>
+
+	<section class="flex flex-col gap-6 py-20 justify-center items-center md:grid md:grid-cols-2 md:grid-rows-2 md:pl-24 lg:pl-0 lg:flex lg:flex-row lg:gap-10">
+	<Card title="Medicamentos Importados y Nacionales" body="Disponemos de un amplio stock de medicamentos para que puedas abastecer tu farmacia." dir="/21.svg" />
+	<Card title="Material Médico Quirúrgico" body="Contamos con una gran variedad de material médico quirúrgico para solventar tus necesidades y poder darle variedad a tu farmacia." dir="/22.svg" />
+	<Card title="Psicotrópicos & Controlados" body="Contamos con una gran variedad de medicamentos de tipo psicotrópicos & controlados atendiendo todas las necesidades de los pacientes de cada farmacia." dir="/23.svg" />
+	<Card title="Misceláneos" body="Contamos con una gran variedad de misceláneos para poder llevar y ofrecer una gran línea de productos demandados en el mercado." dir="/24.svg" />
+</section>
+<section class="flex flex-col justify-center items-center gap-3 pb-10 lg:flex-row lg:gap-20">
+	<article class="flex gap-2 text-center justify-center items-center lg:flex-col">
+		<svg class="w-14 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.94 129.34"><g data-name="Capa 2"><g data-name="Capa 1"><path d="M119.07 37.51H11.87a.07.07 0 0 0-.08.08v14.74a17.71 17.71 0 0 0 17.88 17.51A18 18 0 0 0 45.24 61a2.71 2.71 0 0 1 4.68 0A18.09 18.09 0 0 0 81 61a2.66 2.66 0 0 1 2.28-1.31h.1a2.61 2.61 0 0 1 2.3 1.31 18 18 0 0 0 15.58 8.87 17.71 17.71 0 0 0 17.89-17.51V37.59a.07.07 0 0 0-.08-.08Z" style="isolation:isolate;opacity:.15;fill:red"/><path d="M126 25.88V5.17A5.2 5.2 0 0 0 120.79 0H10.15a5.2 5.2 0 0 0-5.24 5.17v20.71A5.21 5.21 0 0 0 0 31v21.33a28.83 28.83 0 0 0 4.91 16.06v55.78a5.21 5.21 0 0 0 5.24 5.17h110.64a5.2 5.2 0 0 0 5.24-5.17V68.39a28.83 28.83 0 0 0 4.91-16.06V31a5.21 5.21 0 0 0-4.94-5.12ZM16.69 11.64h97.55v14.23H16.69Zm59.25 106.08H55v-16.83h20.94Zm38.37 0H86.42v-22a5.2 5.2 0 0 0-5.24-5.17H49.76a5.2 5.2 0 0 0-5.24 5.17v22H16.69V78.56c.48.22 1 .45 1.48.64a30.24 30.24 0 0 0 23 0 29.7 29.7 0 0 0 6.34-3.57h.09A29.32 29.32 0 0 0 54 79.2a30.16 30.16 0 0 0 29.38-3.57h.1a29 29 0 0 0 6.33 3.57 30.24 30.24 0 0 0 23 0l1.48-.64Zm4.84-65.39a17.71 17.71 0 0 1-17.89 17.51A18 18 0 0 1 85.68 61a2.61 2.61 0 0 0-2.27-1.31h-.1A2.66 2.66 0 0 0 81 61a17.76 17.76 0 0 1-6.57 6.51A18.16 18.16 0 0 1 49.92 61a2.74 2.74 0 0 0-2.34-1.34A2.7 2.7 0 0 0 45.24 61a18 18 0 0 1-15.57 8.84 17.71 17.71 0 0 1-17.89-17.51V37.59a.08.08 0 0 1 .09-.08h107.2a.07.07 0 0 1 .08.08Z" style="fill:red"/></g></g></svg>
+	<h2  class="text-3xl font-bold text-[#e20506]"> +<span id="counter1">0</span>K</h2>
+		<p class="text-lg font-bold">Farmacias Que Distribuimos</p>
+	</article>
+	<article class="flex gap-2 text-center justify-center items-center lg:flex-col">
+		<svg class="w-14 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.72 127.91"><defs><style>.cls-1{fill:red}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M68.9 60.17a22.26 22.26 0 0 0 22.19-22.58c0-12.45-10.17-22.12-22.66-22.12a22.16 22.16 0 0 0-22.19 22.12A22.66 22.66 0 0 0 68.9 60.17Zm-.47-35.49a13.4 13.4 0 0 1 13.41 13.37c0 7.37-6 12.9-13.41 12.9a12.9 12.9 0 0 1-12.94-12.9 13.3 13.3 0 0 1 12.94-13.37ZM137.33 57.4A45.91 45.91 0 0 0 105 45.88h-3.7a30.58 30.58 0 0 1-4.16 9.68 45.14 45.14 0 0 1 7.86-.46 38.55 38.55 0 0 1 24.51 7.37v33.18h9.25V58.78ZM94.33 16.39a11.29 11.29 0 0 1 20.81 8.75A11.54 11.54 0 0 1 105 32.05a7.87 7.87 0 0 1-3.23-.46 32.78 32.78 0 0 1 .46 6.46v2.76c.92 0 1.85.46 2.77.46 11.56 0 20.81-9.22 20.81-20.28A20.58 20.58 0 0 0 105.43.26a19.82 19.82 0 0 0-17.57 10.13 19.79 19.79 0 0 1 6.47 6ZM41.62 56a30.82 30.82 0 0 1-4.17-9.68h-3.7A47.68 47.68 0 0 0 1.39 57.4L0 58.78v36.87h9.25V62.47c7.4-5.07 15.72-7.83 24.5-7.37a41 41 0 0 1 7.87.9ZM33.75 40.81a5.91 5.91 0 0 0 2.78-.46v-2.76a28.47 28.47 0 0 1 .47-6.46 7.74 7.74 0 0 1-3.24.47 11.23 11.23 0 0 1-11.1-11.06A11.22 11.22 0 0 1 33.75 9.48a11.68 11.68 0 0 1 10.64 6.91 45.57 45.57 0 0 1 6.93-6.45 20.52 20.52 0 1 0-17.57 30.87ZM106.81 85.05l-.92-1.38A46.75 46.75 0 0 0 69.82 68a47.72 47.72 0 0 0-36.53 15.67l-.92 1.38v35a7.78 7.78 0 0 0 7.86 7.83h59.18a8.09 8.09 0 0 0 7.86-7.83v-35Zm-9.25 33.64H41.61V88.28C49 80.9 59.18 77.22 69.82 77.22a37.34 37.34 0 0 1 27.74 11.06Z"/></g></g></svg>
+		<h2 class="text-3xl font-bold text-[#e20506]">+<span id="counter2">0</span>K</h2>
+		<p class="text-lg font-bold">Clientes Satisfechos</p>
+	</article>
+	<article class="flex gap-2 text-center justify-center items-center lg:flex-col">
+		<svg class="w-12 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.36 138.43"><g data-name="Capa 2"><path d="M26.14 98c-2.34-2.35-1.12-1.68-6.76-3.2a19.45 19.45 0 0 1-6.84-3.6L.32 121.31a4.33 4.33 0 0 0 4.16 6l14.18-.54 9.75 10.34a4.29 4.29 0 0 0 7.12-1.34l14-34.5A19.25 19.25 0 0 1 26.14 98ZM103 121.31 90.82 91.24a19.28 19.28 0 0 1-6.82 3.6c-5.67 1.52-4.43.86-6.76 3.2a19.25 19.25 0 0 1-23.4 3.19l14 34.5a4.29 4.29 0 0 0 7.11 1.34l9.76-10.34 14.18.54a4.32 4.32 0 0 0 4.11-5.96ZM70.79 91.92c4.11-4.2 4.58-3.84 10.44-5.44a11 11 0 0 0 7.66-7.84c2-7.67 1.49-6.75 7-12.36a11.28 11.28 0 0 0 2.8-10.71c-2-7.67-2-6.6 0-14.28a11.27 11.27 0 0 0-2.8-10.7c-5.5-5.62-5-4.69-7-12.37a11 11 0 0 0-7.66-7.83c-7.5-2.06-6.6-1.52-12.1-7.14A10.67 10.67 0 0 0 58.66.38c-7.5 2.05-6.45 2.06-14 0a10.65 10.65 0 0 0-10.43 2.87c-5.5 5.61-4.59 5.08-12.1 7.14a11 11 0 0 0-7.66 7.83c-2 7.68-1.49 6.75-7 12.37a11.25 11.25 0 0 0-2.8 10.7c2 7.67 2 6.6 0 14.28a11.3 11.3 0 0 0 2.8 10.71c5.5 5.61 5 4.69 7 12.36a11 11 0 0 0 7.66 7.84c6 1.65 6.47 1.39 10.44 5.44A10.65 10.65 0 0 0 46 93.5a10.63 10.63 0 0 1 11.44 0 10.65 10.65 0 0 0 13.35-1.58Zm-44.5-44.35c0-14.33 11.37-26 25.39-26s25.39 11.63 25.39 26-11.37 26-25.39 26-25.39-11.66-25.39-26Z" style="fill:red" data-name="Capa 1"/></g></svg>
+	<h2 class="text-3xl font-bold text-[#e20506]" id="counter3">0</h2>
+		<p class="text-lg font-bold">Estados Donde Llegamos</p>
+	</article>
+	<article class="flex gap-2 text-center justify-center items-center lg:flex-col">
+		<svg class="w-14 h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.87 107.29"><defs><style>.cls-1{fill:red}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M82.49 24.38h34v9.76h-34ZM82.49 48.77h34v9.75h-34ZM82.49 73.15h34v9.76h-34Z"/><path class="cls-1" d="M126.16 0H9.7a9.64 9.64 0 0 0-6.85 2.86A9.78 9.78 0 0 0 0 9.75v87.79a9.75 9.75 0 0 0 2.85 6.89 9.64 9.64 0 0 0 6.85 2.86h116.46a9.66 9.66 0 0 0 6.86-2.86 9.81 9.81 0 0 0 2.85-6.89V9.75A9.83 9.83 0 0 0 133 2.86 9.66 9.66 0 0 0 126.16 0ZM9.7 9.75h53.38v87.79H9.7Zm63.09 87.79V9.75h53.37v87.79Z"/></g></g></svg>
+		<h2 class="text-3xl font-bold text-[#e20506]">+<span id="counter4">0</span></h2>
+		<p class="text-lg font-bold">Aliados Comerciales</p>
+	</article>
+</section>
+<section class="image flex flex-col justify-center items-center py-10 bg-[#000064] text-white">
+	<h2 class="text-3xl font-bold pb-20" >Sobre Nosotros</h2>
+	<div>
+	<h3 class="text-2xl font-bold">Quienes Somos</h3>
+	<p><b>DROGUERÍA VITALCLINIC C.A</b> Empresa nacional ubicada en Maturín conformada por un equipo dedicado a la comercialización y distribución de productos farmacológicos, insumos médico quirúrgico hospitalarios descartables y misceláneos, brindando la mayor calidad y con los precios más competitivos del mercado.</p>
+</div>
+</section>
+</main>
+
+<br>
+<br>
+<br>
+<br>
+
+<footer class=" image grid grid-cols-2 pl-8 gap-6 bg-[#000064] text-white  md:pl-20 lg:flex lg:justify-center lg:gap-16 py-20 ">
+	<div class="">
+		<h4 class="font-bold">Mantente Cerca</h4>
+		<p class="pb-2 w-40 md:w-56" >Mantente conectado con nosotros, síguenos en nuestras diferentes redes sociales.</p>
+		<div class="flex gap-1"><a href="https://www.facebook.com/profile.php?id=100063830534420">
+			<svg class="w-8 h-auto" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"/>
+		</a>
+		<a href="https://www.instagram.com/drogueriavitalclinic/"><svg class="w-8 h-auto" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></a></div>
+	</div>
+	<div>
+		<h4 class="font-bold">Información</h4>
+		<ul>
+			<li> <a href='#about-us'>Quienes Somos</a></li>
+			<li> <a href='#mision'>Misión</a></li>
+			<li> <a href='#vision'>visión</a></li>
+			<li> <a href='#biography'>Biografía</a></li>
+		</ul>
+	</div>
+	<div>
+		<h4 class="font-bold">Cliente Vital</h4>
+		<ul>
+			<li><a href='#'>Cliente Vital</a></li>
+			<li><a href='#allies'>Aliados Comerciales</a></li>
+		</ul>
+	</div>
+	<div>
+		<h4 class="font-bold">Ubícanos</h4>
+		<ul class="flex flex-col gap-1">
+			<li class="flex gap-1 items-center">
+				<svg class="w-6 h-auto" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/>
+					<p>0424-9127427</p>
+					<a href="https://api.whatsapp.com/send?phone=584249127427"><svg class="w-6 h-auto" viewBox="0 0 256 259" width="256" height="259" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z" fill="#00E676"/><path d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z" fill="#FFF"/></a>
+				</li>
+			<li class="flex gap-1 flex-col md:flex-row">
+				<svg  class="w-6 h-auto" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q.825 0 1.413-.587T14 10q0-.825-.587-1.412T12 8q-.825 0-1.412.588T10 10q0 .825.588 1.413T12 12m0 10q-4.025-3.425-6.012-6.362T4 10.2q0-3.75 2.413-5.975T12 2q3.175 0 5.588 2.225T20 10.2q0 2.5-1.987 5.438T12 22"/> <a
+                href='https://www.google.co.ve/maps/place/Droguer%C3%ADa+Vitalclinic/@9.7381419,-63.1791144,19.92z/data=!4m6!3m5!1s0x8c33478ba73fadb5:0xa2893f839ed31ecf!8m2!3d9.7382831!4d-63.1786079!16s%2Fg%2F11rpdmbh1g?hl=es-419'
+                target='_blank'
+                rel='noreferrer'
+              >
+              <p class="texr-sm hover:underline hover:text-yellow-400 cursor-pointer">Av. Orinoco Local Nº122. Maturin Monagas</p>
+              </a></li>
+			<li class="flex gap-1 flex-col md:flex-row">
+				<svg class="w-6 h-auto" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"/>
+				<p class="text-sm">vitalclinicdrogueria@gmail.com</p></li>
+	</ul>
+	</div>
+</footer>
+<di>
+	<p class="py-10 text-center font-bold">© Vitalclinic C.A Todos Los Derechos Reservados</p>
+<div class="flex justify-around gap-3 lg:justify-center ">
+	<article class="border border-black w-52 h-20 flex items-center bg-[#252b42] text-white  rounded-lg">
+		<svg class="w-16" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47c-1.34.03-1.77-.79-3.29-.79c-1.53 0-2 .77-3.27.82c-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51c1.28-.02 2.5.87 3.29.87c.78 0 2.26-1.07 3.81-.91c.65.03 2.47.26 3.64 1.98c-.09.06-2.17 1.28-2.15 3.81c.03 3.02 2.65 4.03 2.68 4.04c-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5c.13 1.17-.34 2.35-1.04 3.19c-.69.85-1.83 1.51-2.95 1.42c-.15-1.15.41-2.35 1.05-3.11"/>
+		<div>
+			<p>Próximamente</p>
+			<h4 class="font-bold">App Store</h4>
+		</div>
+	</article>
+	<article class="border border-black w-52 h-20 flex items-center bg-[#252b42] text-white  rounded-lg">
+		<svg class="w-16" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M5.4 21c-.17.003-.34-.026-.5-.086l8.054-8.057l2.666 2.669l-9.255 5.2A1.998 1.998 0 0 1 5.4 21Zm-1.164-.665a1.9 1.9 0 0 1-.236-.97V4.66a2.13 2.13 0 0 1 .1-.658l8.233 8.235l-8.1 8.1l.003-.002Zm12.179-5.258l-2.841-2.839l3.133-3.132l2.783 1.563c.534.24.892.755.928 1.339a1.574 1.574 0 0 1-.929 1.34l-3.074 1.729Zm-3.461-3.463l-8.34-8.339c.229-.17.506-.26.791-.261c.336.012.664.107.955.277l9.551 5.368l-2.956 2.955h-.001Z"/>
+		<div>
+			<p>Próximamente</p>
+			<h4 class="font-bold">Play Store</h4>
+		</div>
+	</article>
+</div>
+</divcl>
+</Layout>
+
+<style>
+		.image {
+			background-image: url("/noise.png");
+	
+	
+		}
+		h1 {
+			text-shadow: #010101 1px 0px 10px;
+			color: #000064;
+		}
+</style>
+
+
+<script>
+	const counter1 = document.getElementById("counter1")
+	const counter2 = document.getElementById("counter2")
+	const counter3 = document.getElementById("counter3")
+	const counter4 = document.getElementById("counter4")
+	let quiantity1  =0
+	let quiantity2  =0
+	let quiantity3  =0
+	let quiantity4  =0
+
+
+
+	let time1 =setInterval(() => {
+		counter1.textContent=quiantity1+=1
+
+		if(quiantity1 === 2) {
+			clearInterval(time1)
+		}
+	}, 100);
+	
+	
+	let time2 =setInterval(() => {
+		counter2.textContent=quiantity2+=1
+
+		if(quiantity2 === 2) {
+			clearInterval(time2)
+		}
+	}, 100);
+
+	let time3 =setInterval(() => {
+		counter3.textContent=quiantity3+=1
+
+		if(quiantity3 === 25) {
+			clearInterval(time3)
+		}
+	}, 50);
+
+	let time4 =setInterval(() => {
+		counter4.textContent=quiantity4+=1
+
+		if(quiantity4 === 300) {
+			clearInterval(time4)
+		}
+	}, 2);
+
+</script>
+
