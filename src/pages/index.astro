@@ -10,7 +10,7 @@ import Card from '../components/Card.astro';
 	<Navbar  />
 
 	<main>
-	<section class="image w-full h-96 bg-[#e20506] flex flex-col justify-center items-center gap-2 md:flex-row-reverse md:justify-around md:gap-0  ">
+	<section class="bg-image w-full h-96 bg-[#e20506] flex flex-col justify-center items-center gap-2 md:flex-row-reverse md:justify-around md:gap-0  ">
 		<div class=" bg-white rounded-full  grid content-center w-40 h-40 lg:w-80 lg:h-80">
 			<img src="/logo.webp" alt="logo Vitalclinic" class="w-32 pl-4 lg:w-72 lg:p-4">
 		</div>
@@ -45,7 +45,7 @@ import Card from '../components/Card.astro';
 		<p class="text-lg font-bold">Aliados Comerciales</p>
 	</article>
 </section>
-<section class="image flex flex-col justify-center items-center py-10 bg-[#000064] text-white">
+<section class="bg-image flex flex-col justify-center items-center py-10 bg-[#000064] text-white">
 	<h2 class="text-3xl font-bold pb-20" >Sobre Nosotros</h2>
 	<div class=" flex flex-row items-center gap-12">
 <div class="w-96 flex flex-col gap-10 ">
@@ -55,7 +55,7 @@ import Card from '../components/Card.astro';
 	<img class="image1 w-[400px] h-auto" src="/image1.webp" alt="doctor">
 </div>
 </section>
-<section class="image flex flex-col justify-center items-center py-10 ">
+<section class="bg-image flex flex-col justify-center items-center py-10 ">
 
 	<div class=" flex flex-row items-center gap-12">
 		<img class="image1 w-[400px] h-auto" src="/image1.webp" alt="doctor">
@@ -65,7 +65,7 @@ import Card from '../components/Card.astro';
 </div>
 </div>
 </section>
-<section class="image flex flex-col justify-center items-center py-10  bg-[#000064] text-white ">
+<section class="bg-image flex flex-col justify-center items-center py-10  bg-[#000064] text-white ">
 
 	<div class=" flex flex-row items-center gap-16">
 		<div class="w-96 flex flex-col gap-10 ">
@@ -77,12 +77,9 @@ import Card from '../components/Card.astro';
 </section>
 </main>
 
-<br>
-<br>
-<br>
-<br>
 
-<footer class=" image grid grid-cols-2 pl-8 gap-6 bg-[#000064] text-white  md:pl-20 lg:flex lg:justify-center lg:gap-16 py-20 ">
+
+<footer class=" bg-image grid grid-cols-2 pl-8 gap-6 bg-[#000064] text-white  md:pl-20 lg:flex lg:justify-center lg:gap-16 py-20 ">
 	<div class="">
 		<h4 class="font-bold">Mantente Cerca</h4>
 		<p class="pb-2 w-40 md:w-56" >Mantente conectado con nosotros, síguenos en nuestras diferentes redes sociales.</p>
@@ -151,10 +148,8 @@ import Card from '../components/Card.astro';
 </Layout>
 
 <style>
-		.image {
+		.bg-image {
 			background-image: url("/noise.png");
-	
-	
 		}
 		h1 {
 			text-shadow: #010101 1px 0px 10px;
