@@ -7,7 +7,7 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="VitalClinic">
-	<Navbar />
+	<Navbar  />
 
 	<main>
 	<section class="image w-full h-96 bg-[#e20506] flex flex-col justify-center items-center gap-2 md:flex-row-reverse md:justify-around md:gap-0  ">
@@ -47,10 +47,33 @@ import Card from '../components/Card.astro';
 </section>
 <section class="image flex flex-col justify-center items-center py-10 bg-[#000064] text-white">
 	<h2 class="text-3xl font-bold pb-20" >Sobre Nosotros</h2>
-	<div>
-	<h3 class="text-2xl font-bold">Quienes Somos</h3>
+	<div class=" flex flex-row items-center gap-12">
+<div class="w-96 flex flex-col gap-10 ">
+		<h3 class="text-2xl font-bold">Quienes Somos</h3>
 	<p><b>DROGUERÍA VITALCLINIC C.A</b> Empresa nacional ubicada en Maturín conformada por un equipo dedicado a la comercialización y distribución de productos farmacológicos, insumos médico quirúrgico hospitalarios descartables y misceláneos, brindando la mayor calidad y con los precios más competitivos del mercado.</p>
 </div>
+	<img class="image1 w-[400px] h-auto" src="/image1.webp" alt="doctor">
+</div>
+</section>
+<section class="image flex flex-col justify-center items-center py-10 ">
+
+	<div class=" flex flex-row items-center gap-12">
+		<img class="image1 w-[400px] h-auto" src="/image1.webp" alt="doctor">
+<div class="w-96 flex flex-col gap-10 ">
+		<h3 class="text-2xl font-bold">Nuestra Misión</h3>
+	<p>Cubrir plenamente las necesidades de los clientes en cuanto a la venta y distribución de productos farmacológicos, insumos médico quirúrgico hospitalario descartables y misceláneos se refiere, cumpliendo mediante un nivel de servicio caracterizado por la excelencia y con un equipo de trabajo comprometido con el cliente a través de capacitaciones que mejoran su desempeño personal, su agilidad, profesionalismo y de muy buena calidad a partir de una íntima relación con el cliente. Somos una empresa con alto sentido de responsabilidad en nuestros servicios.</p>
+</div>
+</div>
+</section>
+<section class="image flex flex-col justify-center items-center py-10  bg-[#000064] text-white ">
+
+	<div class=" flex flex-row items-center gap-16">
+		<div class="w-96 flex flex-col gap-10 ">
+			<h3 class="text-2xl font-bold">Nuestra Visión</h3>
+			<p>Ser una empresa líder con alcance en todo el territorio nacional, abasteciendo zonas foráneas de poco alcance en el mercado; Venta y distribución de productos farmacológicos, insumos médico quirúrgico hospitalario descartables y misceláneos, así mismo trabajar en un proceso de mejora continua que permita ser competitiva, productiva y eficaz para ofrecer los mejores servicios, con soluciones sólidas, personal calificado y calidad con principios éticos que nos definen.</p>
+		</div>
+		<img class="image1 w-[400px] h-auto" src="/image1.webp" alt="doctor">
+	</div>
 </section>
 </main>
 
@@ -137,6 +160,11 @@ import Card from '../components/Card.astro';
 			text-shadow: #010101 1px 0px 10px;
 			color: #000064;
 		}
+
+		.image1 {
+  filter: drop-shadow(2px 2px 4px #000000);
+}
+
 </style>
 
 
