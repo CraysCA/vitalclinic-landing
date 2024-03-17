@@ -140,50 +140,72 @@ import Card from '../components/Card.astro';
 </style>
 
 
-<!-- <script>
-	const counter1 = document.getElementById("counter1")
-	const counter2 = document.getElementById("counter2")
-	const counter3 = document.getElementById("counter3")
-	const counter4 = document.getElementById("counter4")
-	let quiantity1  =0
-	let quiantity2  =0
-	let quiantity3  =0
-	let quiantity4  =0
+<script>
+	// const counter1 = document.getElementById("counter1")
+	// const counter2 = document.getElementById("counter2")
+	// const counter3 = document.getElementById("counter3")
+	// const counter4 = document.getElementById("counter4")
+	// let quiantity1  =0
+	// let quiantity2  =0
+	// let quiantity3  =0
+	// let quiantity4  =0
 
 
 
-	let time1 =setInterval(() => {
-		counter1.textContent=quiantity1+=1
+	// let time1 =setInterval(() => {
+	// 	counter1.textContent=quiantity1+=1
 
-		if(quiantity1 === 2) {
-			clearInterval(time1)
-		}
-	}, 100);
+	// 	if(quiantity1 === 2) {
+	// 		clearInterval(time1)
+	// 	}
+	// }, 100);
 	
 	
-	let time2 =setInterval(() => {
-		counter2.textContent=quiantity2+=1
+	// let time2 =setInterval(() => {
+	// 	counter2.textContent=quiantity2+=1
 
-		if(quiantity2 === 2) {
-			clearInterval(time2)
-		}
-	}, 100);
+	// 	if(quiantity2 === 2) {
+	// 		clearInterval(time2)
+	// 	}
+	// }, 100);
 
-	let time3 =setInterval(() => {
-		counter3.textContent=quiantity3+=1
+	// let time3 =setInterval(() => {
+	// 	counter3.textContent=quiantity3+=1
 
-		if(quiantity3 === 25) {
-			clearInterval(time3)
-		}
-	}, 50);
+	// 	if(quiantity3 === 25) {
+	// 		clearInterval(time3)
+	// 	}
+	// }, 50);
 
-	let time4 =setInterval(() => {
-		counter4.textContent=quiantity4+=1
+	// let time4 =setInterval(() => {
+	// 	counter4.textContent=quiantity4+=1
 
-		if(quiantity4 === 300) {
-			clearInterval(time4)
-		}
-	}, 2);
+	// 	if(quiantity4 === 300) {
+	// 		clearInterval(time4)
+	// 	}
+	// }, 2);
 
-</script> -->
+	const counters = [
+  { element: document.getElementById("counter1"), quantity: 0, target: 2, interval: 100 },
+  { element: document.getElementById("counter2"), quantity: 0, target: 2, interval: 100 },
+  { element: document.getElementById("counter3"), quantity: 0, target: 25, interval: 50 },
+  { element: document.getElementById("counter4"), quantity: 0, target: 300, interval: 2 }
+];
+
+counters.forEach(counter => {
+  let time = setInterval(() => {
+    counter.quantity += 1;
+	if (counter.element) {
+      counter.element.textContent = counter.quantity.toString();
+    }
+
+	
+
+    if (counter.quantity === counter.target) {
+      clearInterval(time);
+    }
+  }, counter.interval);
+});
+
+</script>
 
