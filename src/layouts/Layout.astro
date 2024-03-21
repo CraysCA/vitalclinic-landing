@@ -11,13 +11,16 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Droguería Vitalclinic, distribuidora nacional de productos farmacológicos y equipos médicos en Maturín. Calidad y compromiso en nuestros servicios." />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="w-[444px] md:w-full">
+	<body
+>	
+
 		<slot />
+
 	</body>
 </html>
 <style is:global>
@@ -44,5 +47,29 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
-	;
+	
+	:root {
+				--color-primary: #ddd;
+				--color-secondary: #333;
+				--color-accent: #b4cd02;
+				--color-accent-rgb: 213, 255, 0;
+
+				--background-color: #141800;
+				--background-twitch: var(--color-twitch-ice);
+
+				--color-twitch: #9146ff;
+				--color-twitch-ice: #f0f0ff;
+			}
+
+		
+			html {
+				font-family: "Jost Variable", system-ui, sans-serif;
+				background: var(--background-color);
+				scrollbar-gutter: stable;
+			}
+
+		
+
+		
+	
 </style>
